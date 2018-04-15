@@ -1,0 +1,60 @@
+
+###Arch.1 acc:90~95
+
+model.add_layer(units=8, activation='relu', input_units=4)
+model.add_layer(units=3, activation='softmax', input_units=8)
+model.fit(X=x_train, y=y_train, epochs=500, learning_rate=0.005)
+
+
+###############################################################################
+
+###Arch.2 acc: 95
+
+model.add_layer(units=8, activation='tanh', input_units=4)
+model.add_layer(units=3, activation='softmax', input_units=8)
+model.fit(X=x_train, y=y_train, epochs=500, learning_rate=0.005)
+
+
+###############################################################################
+
+
+###Arch.3 acc:85~87
+
+model.add_layer(units=8, activation='sigmoid', input_units=4)
+model.add_layer(units=3, activation='softmax', input_units=8)
+model.fit(X=x_train, y=y_train, epochs=500, learning_rate=0.005)
+
+###############################################################################
+
+###Arch.4 acc:85~90
+
+model.add_layer(units=4, activation='relu', input_units=4)
+model.add_layer(units=4, activation='relu', input_units=4)
+model.add_layer(units=3, activation='softmax', input_units=4)
+model.fit(X=x_train, y=y_train, epochs=500, learning_rate=0.005)
+
+
+###############################################################################
+
+###Arch.5 acc:88~91
+
+model.add_layer(units=4, activation='tanh', input_units=4)
+model.add_layer(units=4, activation='relu', input_units=4)
+model.add_layer(units=3, activation='softmax', input_units=4)
+model.fit(X=x_train, y=y_train, epochs=500, learning_rate=0.005)
+
+###############################################################################
+
+###Arch.6 acc:~98
+
+model.add_layer(units=8, activation='sigmoid', input_units=4)
+model.add_layer(units=3, activation='softmax', input_units=8)
+model.fit(X=x_train, y=y_train, epochs=1000, learning_rate=0.005)
+
+###############################################################################
+
+##Arch.7 acc:98.33
+
+model.add_layer(units=8, activation='relu', input_units=4)
+model.add_layer(units=3, activation='softmax', input_units=8)
+model.fit(X=x_train, y=y_train, epochs=1000, learning_rate=0.005)
